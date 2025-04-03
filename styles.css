@@ -26,7 +26,7 @@ nav a {
     margin: 10px;
     text-align: center;
     border: 2px solid red;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .product-card img {
@@ -34,13 +34,13 @@ nav a {
 }
 
 .product-card p:nth-child(4) {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 button {
     background-color: red;
     color: white;
-    padding: 8px; 
+    padding: 8px;
 }
 
 button:hover {
@@ -54,6 +54,17 @@ footer {
     padding: 10px;
 }
 
+.video-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.video-section iframe {
+    border: 2px solid yellow;
+    width: 80%;
+    height: 315px;
+}
+
 @media (max-width: 768px) {
     .featured-products {
         flex-direction: column;
@@ -61,6 +72,21 @@ footer {
     }
     .product-card {
         width: 80%;
-        margin: 20px 0; 
+        margin: 20px 0;
+    }
+    .video-section iframe {
+        width: 100%;
+        height: 200px;
     }
 }
+
+/*
+ ¿Qué ajustes hiciste con DevTools y cómo mejoraron el diseño?
+Con DevTools, le puse padding 10px porque antes todo estaba muy pegado y ahora se ve más espacioso 
+También cambié el padding de los botones de 5px a 8px para que fueran más grandes y fáciles de clicar.
+Al precio le puse font-weight: bold para que destacara del resto del texto,
+ Esto co el fin que el diseño se viera menos apretado y más claro, sobretodo en pantallas pequeñas.
+ ¿Cómo refleja tu diseño un enfoque comercial efectivo?
+ pues creo que lo colores y el uso de imagenes y videos le agrega cierto atractivo
+
+*/
